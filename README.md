@@ -1,3 +1,10 @@
+## edited version of dsheedes cd_drawtextui
+
+- Original Creator: https://github.com/dsheedes/cd_drawtextui
+
+## What was added
+Config.lua (The ability to place your own drawtext using coords within the config)
+
 # INSTALLATION GUIDE
 **1.** Clone the repository or Code > Download zip
  
@@ -84,7 +91,8 @@ This can be triggered from the server or client. A more advanced example is post
     end)
 
 
-
+## Preview Of Change
+![Preview Screenshot](https://i.imgur.com/AIddo1n.jpeg)
 
 ## Is the resource not working as expected?
 - Make sure the name of the folder is `cd_drawtextui`.
