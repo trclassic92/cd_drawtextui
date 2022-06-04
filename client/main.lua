@@ -15,7 +15,6 @@ CreateThread(function()
     local alreadyEnteredZone = false
     local text = nil
     while true do
-        Wait = 5
         local ped = PlayerPedId()
         local inZone = false
         for cd = 1, #Config.Locations do
@@ -48,6 +47,6 @@ CreateThread(function()
             alreadyEnteredZone = false
             TriggerEvent('cd_drawtextui:HideUI')
         end
-        Wait(Wait)
+        Wait(5)
     end
 end)
