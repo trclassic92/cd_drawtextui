@@ -15,13 +15,13 @@ CreateThread(function()
     local alreadyEnteredZone = false
     local text = nil
     while true do
-        Wait = 5
+        wait = 5
         local ped = PlayerPedId()
         local inZone = false
         for cd = 1, #Config.Locations do
             local dist = #(GetEntityCoords(ped)-vector3(Config.Locations[cd].coords.x, Config.Locations[cd].coords.y, Config.Locations[cd].coords.z))
             if dist <= Config.Locations[cd].distance then
-                Wait = 5
+                wait = 5
                 inZone  = true
                 text = Config.Locations[cd].text
 
@@ -30,7 +30,7 @@ CreateThread(function()
                 end
                 break
             else
-                Wait = 2000
+                wait = 2000
             end
         end
 
@@ -48,6 +48,6 @@ CreateThread(function()
             alreadyEnteredZone = false
             TriggerEvent('cd_drawtextui:HideUI')
         end
-        Wait(Wait)
+        Wait(wait)
     end
 end)
